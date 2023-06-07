@@ -1,0 +1,6 @@
+{% extends 'base.html.twig'%}
+
+{% block body %}
+    <h1>AS4YOU</h1>
+    <p class="lead">Hello, {{ app.request.query.get('name') | default('My Friend') }}!</p>
+{% endblock %}
